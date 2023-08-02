@@ -2,19 +2,19 @@
   "eventos": [
     {
       "id": 1,
-      "nombre": "Concierto 1",
-      "artista": "Artista 1",
-      "genero": "Género 1",
+      "nombre": "Fiesta Siniestra",
+      "artista": "Los Muertos",
+      "genero": "Rock",
       "id_ubicacion": 1,
-      "hora_inicio": "2023-07-04T09:00:00",
-      "hora_fin": "2023-07-04T12:00:00",
-      "descripcion": "Descripción del concierto 1",
-      "imagen": "url_imagen1.jpg"
+      "hora_inicio": "2023-08-18T20:00:00",
+      "hora_fin": "2023-08-18T23:59:00",
+      "descripcion": "Vuelve la Fiesta Siniestra en Agosto! ENTRADA GRATUITA! NO TE LO PIERDAS!",
+      "imagen": "https://www.parlante.cl/wp-content/uploads/2015/10/Los-muertos.jpg"
     },
     {
       "id": 2,
       "nombre": "Concierto 2",
-      "artista": "Artista 2",
+      "artista": "Maldonado crew",
       "genero": "Género 2",
       "id_ubicacion": 2,
       "hora_inicio": "2023-07-05T18:00:00",
