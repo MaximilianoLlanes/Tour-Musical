@@ -50,7 +50,8 @@ def mostrar_main_view():
 
     button_buscar = tk.Button(root, text="Buscar Eventos",
                               font=("Open Sans", 14), bg="#E6D884",
-                              command=evento_details_view.mostrar_evento_details_view)
+                              #command=evento_details_view.mostrar_evento_details_view)
+                              
     button_buscar.pack(pady=10)
 
     button_historial = tk.Button(root, text="Historial de Eventos",
