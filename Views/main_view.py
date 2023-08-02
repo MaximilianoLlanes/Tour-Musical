@@ -2,9 +2,8 @@ import json
 import os
 import tkinter as tk
 from tkinter import ttk
-from views import evento_details_view
 from views import buscar_eventos
-
+from views import evento_details_view
 
 def mostrar_main_view():
     def mostrar_lista_eventos():
@@ -53,7 +52,6 @@ def mostrar_main_view():
     button_buscar = tk.Button(root, text="Buscar Eventos",
                               font=("Open Sans", 14), bg="#E6D884",
                               command=buscar_eventos.buscar_eventos_musicales)
-                              
     button_buscar.pack(pady=10)
 
     button_historial = tk.Button(root, text="Historial de Eventos",

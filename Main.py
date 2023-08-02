@@ -11,16 +11,6 @@ sys.path.append(views_dir)
 current_dir = os.path.dirname(__file__)
 sys.path.append(current_dir)
 
-# Importar los módulos desde la carpeta "views"
-from main_view import mostrar_main_view
-from evento_details_view import mostrar_evento_details_view
-from ubicacion_details_view import mostrar_ubicacion_details_view
-
-# Ahora importar los módulos desde la carpeta actual
-from main_view import mostrar_main_view
-from evento_details_view import mostrar_evento_details_view
-from ubicacion_details_view import mostrar_ubicacion_details_view
-
 # Importar las funciones para mostrar las vistas desde la carpeta "views"
 from main_view import mostrar_main_view
 from evento_details_view import mostrar_evento_details_view

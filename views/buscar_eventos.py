@@ -34,6 +34,7 @@ def mostrar_resultados():
         "artista": entry_artista.get(),
         "genero": entry_genero.get(),
     }
+
     #Llama la función buscar_eventos
     eventos_encontrados = buscar_eventos(criterios)
     
@@ -60,12 +61,18 @@ def buscar_eventos_musicales():
     label_instrucciones = tk.Label(root, text="Ingrese los criterios de búsqueda para encontrar eventos musicales:")
     label_instrucciones.pack(pady=10)
 
+    label_nombre = tk.Label(root, text="Nombre evento:")
+    label_nombre.pack()
     entry_nombre = tk.Entry(root, width=30)
     entry_nombre.pack(pady=5)
 
+    label_artista = tk.Label(root, text="Artista:")
+    label_artista.pack()
     entry_artista = tk.Entry(root, width=30)
     entry_artista.pack(pady=5)
 
+    label_genero = tk.Label(root, text="Género:")
+    label_genero.pack()
     entry_genero = tk.Entry(root, width=30)
     entry_genero.pack(pady=5)
 
