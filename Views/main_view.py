@@ -18,7 +18,7 @@ def mostrar_main_view():
         lista_eventos.pack()
 
         # Cargar los eventos desde el archivo eventos_data.json
-        ruta_archivo = os.path.join(os.path.dirname(__file__), "data", "eventos_data.json")
+        ruta_archivo = "data\eventos_data.json"
         if os.path.exists(ruta_archivo):
             with open(ruta_archivo, 'r') as file:
                 data = json.load(file)
