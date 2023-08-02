@@ -1,0 +1,26 @@
+{
+  "eventos": [
+    {
+      "id": 1,
+      "nombre": "Concierto 1",
+      "artista": "Artista 1",
+      "genero": "Género 1",
+      "id_ubicacion": 1,
+      "hora_inicio": "2023-07-04T09:00:00",
+      "hora_fin": "2023-07-04T12:00:00",
+      "descripcion": "Descripción del concierto 1",
+      "imagen": "url_imagen1.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Concierto 2",
+      "artista": "Artista 2",
+      "genero": "Género 2",
+      "id_ubicacion": 2,
+      "hora_inicio": "2023-07-05T18:00:00",
+      "hora_fin": "2023-07-05T22:00:00",
+      "descripcion": "Descripción del concierto 2",
+      "imagen": "url_imagen2.jpg"
+    }
+  ]
+}
