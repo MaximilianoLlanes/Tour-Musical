@@ -3,6 +3,8 @@ import os
 import tkinter as tk
 from tkinter import ttk
 from views import evento_details_view
+from views import buscar_eventos
+
 
 def mostrar_main_view():
     def mostrar_lista_eventos():
@@ -50,7 +52,7 @@ def mostrar_main_view():
 
     button_buscar = tk.Button(root, text="Buscar Eventos",
                               font=("Open Sans", 14), bg="#E6D884",
-                              #command=evento_details_view.mostrar_evento_details_view)
+                              command=buscar_eventos.buscar_eventos_musicales)
                               
     button_buscar.pack(pady=10)
 

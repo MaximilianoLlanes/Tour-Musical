@@ -1,5 +1,12 @@
 import tkinter as tk
 from tkinter import ttk
+import json
+
+#Cargar los eventos desde el archivo eventos_data.json
+ruta_archivo = "data\eventos_data.json"
+with open(ruta_archivo, 'r') as file:
+    data = json.load(file)
+eventos = data["eventos"]
 
 # Declarar las variables globales
 entry_nombre = None
@@ -10,7 +17,7 @@ resultado_text = None
 #Recorro el diccionario en búsqueda de coincidencia de criterios 
 def buscar_eventos(criterios):
     resultados = []
-    for evento in evento:
+    for evento in eventos:
         cumple_criterios = True
         for criterio, valor in criterios.items():
             if valor and str(valor).lower() not in str(evento[criterio]).lower():
