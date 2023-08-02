@@ -1,13 +1,16 @@
-#-------------------------------------------------------------------------------------------------------------------------
-#Bibliotecas
-#-------------------------------------------------------------------------------------------------------------------------
 import tkinter as tk
 from tkinter import ttk
+
+# Declarar las variables globales
+entry_nombre = None
+entry_artista = None
+entry_genero = None
+resultado_text = None
 
 #Recorro el diccionario en búsqueda de coincidencia de criterios 
 def buscar_eventos(criterios):
     resultados = []
-    for evento in eventos:
+    for evento in evento:
         cumple_criterios = True
         for criterio, valor in criterios.items():
             if valor and str(valor).lower() not in str(evento[criterio]).lower():
@@ -41,6 +44,8 @@ def mostrar_resultados():
 
 #Función 
 def buscar_eventos_musicales():
+    global entry_nombre, entry_artista, entry_genero, resultado_text
+
     root = tk.Tk()
     root.title("Buscador de Eventos Musicales")
     root.geometry("500x400")
