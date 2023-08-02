@@ -32,14 +32,14 @@ def mostrar_menu_principal():
     root = tk.Tk()
     root.withdraw()  # Ocultar la ventana principal
 
-    opcion = tk.messagebox.askquestion("Menú Principal",
-                                       "¿Qué acción deseas realizar?",
+    opcion = tk.messagebox.askquestion("Deseas cerrar la aplicación?",
+                                       "¿Deseas cerrar la aplicación?",
                                        icon="question")
 
     if opcion == "yes":
-        mostrar_main_view()
+        root.destroy()  # Cerrar la ventana principal
     elif opcion == "no":
-        mostrar_evento_details_view()
+        mostrar_main_view()
     else:
         mostrar_ubicacion_details_view()
 
@@ -71,3 +71,4 @@ def mostrar_menu_principal():
 
 if __name__ == "__main__":
     mostrar_menu_principal()
+
