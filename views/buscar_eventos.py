@@ -83,5 +83,3 @@ def buscar_eventos_musicales():
     resultado_text.pack(pady=10)
 
     root.mainloop()
-
-buscar_eventos_musicales()

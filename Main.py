@@ -7,10 +7,6 @@ import sys
 views_dir = os.path.join(os.path.dirname(__file__), "Views")
 sys.path.append(views_dir)
 
-# Agregar el directorio actual al PYTHONPATH
-current_dir = os.path.dirname(__file__)
-sys.path.append(current_dir)
-
 # Importar las funciones para mostrar las vistas desde la carpeta "views"
 from main_view import mostrar_main_view
 from evento_details_view import mostrar_evento_details_view
