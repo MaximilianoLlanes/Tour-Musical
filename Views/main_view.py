@@ -47,13 +47,11 @@ def mostrar_main_view():
                 ubicacion_details_view.mostrar_ubicacion_details_view(ubicacion_id)
 
         # Vincular la funcion mostrar_detalle_ubicacion al evento de seleccion en la lista
-        lista_eventos.bind("<Double-Button-1>", lambda event: mostrar_detalle_ubicacion(int(lista_eventos.curselection()[0])+1)) # Sumamos 1 para ajustar el índice
+        lista_eventos.bind("<Double-Button-1>", lambda event: mostrar_detalle_ubicacion(int(lista_eventos.curselection()[0])+1))
 
 
     root = tk.Tk()
     root.title("Tour Musical - Inicio")
-
-
 
     # Pantalla Completa
     root.attributes("-fullscreen", True)
