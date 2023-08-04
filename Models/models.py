@@ -1,5 +1,7 @@
 import json
 
+#Todo esto esta sin usar
+
 class Evento:
     def __init__(self, id, nombre, artista, genero, id_ubicacion, hora_inicio, hora_fin, descripcion, imagen):
         self.id = id

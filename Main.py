@@ -3,11 +3,10 @@ from tkinter import messagebox
 import os
 import sys
 
-# Agregar el directorio "views" al PYTHONPATH
 views_dir = os.path.join(os.path.dirname(__file__), "Views")
 sys.path.append(views_dir)
 
-# Importar las funciones para mostrar las vistas desde la carpeta "views"
+# Importar las funciones
 from main_view import mostrar_main_view
 from evento_details_view import mostrar_evento_details_view
 from ubicacion_details_view import mostrar_ubicacion_details_view
@@ -58,4 +57,3 @@ def mostrar_menu_principal():
 if __name__ == "__main__":
     mostrar_menu_principal()
 
-#Esto es una prueba
